@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="css/estilos.css" rel="stylesheet">
-    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <title>Mercado Libre</title>
 </head>
@@ -31,7 +33,7 @@
 
             
             <div class="frase center">
-                <p><i class="fa fa-credit-card" aria-hidden="true"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
             <nav>
                 <ul>
@@ -41,11 +43,18 @@
                     <li><a class="" href="#">Ayuda</a></li>
                 </ul>
                 <ul>
-                    <li><a class="" href="#">Creá tu cuenta</a></li>
-                    <li><a class="" href="#">Ingresá</a></li>
-                    <li><a class="" href="#">Mis Compras</a></li>
+                    <li><a class="" href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a class="" href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="" href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
+            <div class="burguer-menu center">
+                <span class="fa-stack fa-lg">
+                    <i class="fas fa-square fa-stack-2x light-blue"></i>
+                    <i class="fas fa-bars burger fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+
         </div>
     </header>
         
@@ -75,7 +84,7 @@
                 </div>
                 <div class="box-price-nameproduct">
                     <div class="box-price">
-                        <span class="mr-2">$230.000</span>
+                        <span class="price mr-2">$230.000</span>
                         <span class="descuentos bold">20% off</span>
                     </div>
                     <h3 class="box-name">MacBook Pro 2019</h3>
@@ -88,7 +97,7 @@
                 </div>
                 <div class="box-price-nameproduct">
                     <div class="box-price">
-                        <span class="mr-2">$70.500</span>
+                        <span class="price mr-2">$70.500</span>
                         <span class="descuentos bold">10% off</span>
                     </div>
                     <h3 class="box-name">Samsung Galaxy S10</h3>
@@ -101,7 +110,7 @@
                 </div>
                 <div class="box-price-nameproduct">
                     <div class="box-price">
-                        <span class="mr-2">$70.500</span>
+                        <span class="price mr-2">$70.500</span>
                         <span class="descuentos bold">10% off</span>
                     </div>
                     <h3 class="box-name">Samsung Galaxy S10</h3>
@@ -114,21 +123,20 @@
         
     <footer>
         <div class="contenedor">
-            <div class="box-info">
+            <div class="box-info center">
+                <div class="light-blue mb-1"><i class="fas fa-credit-card fa-2x"></i></div>
                 <h4>Pagá con tarjeta o en efectivo</h4>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 7 puntos de pago. ¡Y siempre es seguro!</p>
             </div>
-            <div class="box-info">
+            <div class="box-info center">
+                <div class="light-blue mb-1"><i class="fas fa-gift fa-2x"></i></div>
                 <h4>Envío gratis desde $ 2.500</h4>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
             </div>
-            <div class="box-info">
+            <div class="box-info center">
+                <div class="light-blue mb-1"><i class="fas fa-user-shield fa-2x"></i></div>
                 <h4>Seguridad, de principio a fin</h4>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-            </div>
-            <div class="box-info">
-                <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en 7 puntos de pago. ¡Y siempre es seguro!</p>
             </div>
             <div class="line">
                 <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
