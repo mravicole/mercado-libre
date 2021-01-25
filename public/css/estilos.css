@@ -14,8 +14,23 @@
     --grey-light-2: #ebebeb;
     --grey-medium: #666666;
     --black: #000000;
-  }
+}
 
+.my-2 {
+    margin: 20px 0;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.my-3 {
+    margin: 30px 0;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
 
 
 body {
@@ -56,7 +71,7 @@ h4 {
     color: var(--grey-medium);
 }
 
-input[type=text] {
+.search-container input[type=text] {
     float: right;
     padding: 6px;
     border: none;
@@ -121,8 +136,16 @@ a, a:hover, a:link, a:visited {
     margin: 0%;
 }
 
-.contenedor {
+.contenedor, .contenedor-register, .contenedor-login {
     padding: 0 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-register, .contenedor-login {
+    padding: 0 15px;
+    width: 100%;
 }
 
 .banner {
@@ -131,7 +154,7 @@ a, a:hover, a:link, a:visited {
 }
 
 article {
-    display: grid;
+    display: block;
     background-color: var(--white);
     width: 320px;
     height: auto;
@@ -244,6 +267,8 @@ footer {
     line-height: 20px;
     font-size: 12px;
     padding: 30px 0 15px 0;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .box-info {
@@ -264,6 +289,7 @@ footer {
 
 .line {
     border-top: 1px dotted #ddd;
+    padding-top: 15px;
 }
 
 .blue {
@@ -279,6 +305,152 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group .form-label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000000;
+    fill: #000000;
+    background-color: #FFFFFF;
+    -webkit-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-control:hover, .form-select:hover, .form-quantity:hover {
+    border: 1px solid #000000;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+}
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: uppercase;
+    white-space: normal;
+    background: none;
+    -webkit-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    padding: 13px;
+    background-color: var(--light-blue);
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    padding: 13px;
+    background-color: var(--blue);
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.btn-block {
+    float: left;
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Panel error */
+
+ .w3-pale-red, .w3-hover-pale-red:hover {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+.w3-border {
+    border: 1px solid #f5c2c7;
+}
+.w3-panel {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.w3-panel p {
+    line-height: 20px;
+}
+.w3-container, .w3-panel {
+    padding: 16px;
+    border-radius: 4px;
 }
 
 @media (min-width: 768px) {
@@ -312,6 +484,10 @@ footer {
 
     .box-name {
         display: block;
+    }
+
+    .contenedor-register, .contenedor-login {
+        max-width: 540px;
     }
     
 }
