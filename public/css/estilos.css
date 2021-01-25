@@ -40,7 +40,15 @@ body {
 
 .main-header {
     background-color: var(--yellow);
+    width: 100%;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.mt-header {
+    margin-top: 138px;
 }
 
 h1 {
@@ -500,6 +508,10 @@ input[type=checkbox], input[type=radio] {
 
     .main-navbar li {
         margin: 0 12px;
+    }
+
+    .mt-header {
+        margin-top: 100px;
     }
 
     .frase p {
