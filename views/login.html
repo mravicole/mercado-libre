@@ -10,6 +10,7 @@
     <title>Bienvenido a Mercado Liebre</title>
 </head>
 <body>
+    
     <header class="main-header">
         <div class="contenedor">
             <div class="main-header-top-bar">
@@ -46,8 +47,6 @@
                     <li><a class="" href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
-            
-
         </div>
     </header>
         
@@ -56,25 +55,21 @@
             <div class="center">
                 <h2 class="my-3">Ingresá</h2>
             </div>
-            <form action="/" method="GET">
+            <form action="/login" method="GET">
                 <div class="w3-panel w3-pale-red w3-border">
                     <p><i class="fas fa-exclamation-circle"></i> <strong>Error!</strong> Los datos ingresados no son correctos.</p>
                 </div>
-
                 <div class="form-group">
                     <!-- <label class="form-label" for="fname">Nombre y Apellido</label> -->
-                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Nombre de usuario">
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Nombre de usuario">
                 </div>
                 <div class="form-group">
                     <!-- <label class="form-label" for="lname">Nombre de usuario</label> -->
-                    <input class="form-control" type="text" id="lname" name="lname" placeholder="Elegí tu contraseña">
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Elegí tu contraseña">
                 </div>
-    
-
                 <div class="btn-group">
                     <input class="btn btn-primary btn-block mb-2" type="submit" value="Enviar" name="">
                 </div>
-
             </form>
         </div>
     </main>
