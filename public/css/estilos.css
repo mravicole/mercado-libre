@@ -9,12 +9,22 @@
     --green: #39b54a;
     --blue:  #03264C;
     --light-blue: #1259c3;
+    --blue-primary-hover: #0022AA;
     --white: #ffffff;
     --grey-light: #f3f3f3;
     --grey-light-2: #ebebeb;
     --grey-medium: #666666;
     --grey-opacity: rgba(0, 0, 0, 0.3);
     --black: #000000;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.light-blue {
+    color: var(--light-blue);
+
 }
 
 body {
@@ -43,38 +53,19 @@ h4 {
     color: var(--grey-medium);
 }
 
-.light-blue {
-    color: var(--light-blue);
-
-}
-
 .center {
     text-align: center;
 }
 
-.w-30 {
-    width: 30%;
-}
+.w-30 { width: 30%;}
+.w-70 { width: 70%;}
 
-.w-70 {
-    width: 70%;
-}
-
-.my-2 {
-    margin: 20px 0;
-}
-
-.mt-3 {
-    margin-top: 30px;
-}
-
-.my-3 {
-    margin: 30px 0;
-}
-
-.mb-2 {
-    margin-bottom: 20px;
-}
+.my-2 { margin: 20px 0;}
+.mt-3 { margin-top: 30px;}
+.my-3 { margin: 30px 0;}
+.mb-2 { margin-bottom: 20px;}
+.mr-2 { margin-right: 20px;}
+.mb-1 { margin-bottom: 10px;}
 
 a {
     outline: none;
@@ -134,7 +125,6 @@ a, a:hover, a:link, a:visited {
     font-size: 17px;
     border: none;
     cursor: pointer;
-   
 }
   
 .search-container button:hover {
@@ -257,14 +247,6 @@ i { vertical-align: middle; }
     font-weight: bold;
 }
 
-.mr-2 {
-    margin-right: 20px;
-}
-
-.mb-1 {
-    margin-bottom: 10px;
-}
-
 .box-image {
     padding: 10px 0;
 }
@@ -276,8 +258,8 @@ i { vertical-align: middle; }
 }
 
 .box-price {
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -332,10 +314,6 @@ footer {
     padding-top: 15px;
 }
 
-.blue {
-    color: var(--blue);
-}
-
 .product-order {
     display: flex;
     flex-wrap: wrap;
@@ -359,13 +337,13 @@ footer {
     padding: 12px;
     width: 100%;
     font-size: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--grey-opacity);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: #000000;
-    fill: #000000;
-    background-color: #FFFFFF;
+    color: var(--black);
+    fill: var(--black);
+    background-color: var(--white);
     -webkit-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -374,11 +352,11 @@ footer {
 }
 
 .form-control:hover, .form-select:hover, .form-quantity:hover {
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
 }
 
 .checkbox-group {
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
 }
 
 .checkbox, .radio {
@@ -440,17 +418,26 @@ input[type=checkbox], input[type=radio] {
 .btn-primary {
     padding: 13px;
     background-color: var(--light-blue);
-    color: #FFFFFF;
-    fill: #FFFFFF;
+    color: var(--white);
+    fill: var(--white);
     letter-spacing: 2px;
     font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color:var(--blue-primary-hover);
+}
+
+.btn:hover, .btn:focus {
+    outline: 0;
+    opacity: 0.8;
 }
 
 .btn-secondary {
     padding: 13px;
     background-color: var(--blue);
-    color: #FFFFFF;
-    fill: #FFFFFF;
+    color: var(--white);
+    fill: var(--white);
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -465,8 +452,6 @@ input[type=checkbox], input[type=radio] {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-/* Panel error */
 
  .w3-pale-red, .w3-hover-pale-red:hover {
     color: #842029;
@@ -633,5 +618,4 @@ input[type=checkbox], input[type=radio] {
         padding: 20px 0;
     }
 
-    
 }
