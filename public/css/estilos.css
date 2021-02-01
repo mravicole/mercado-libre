@@ -631,6 +631,11 @@ input[type=checkbox], input[type=radio] {
         box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
     }
 
+    footer.login {
+        position: fixed;
+        bottom: 0;
+    }
+
     .footer-desk {
         display: flex;
         padding: 20px 0;
