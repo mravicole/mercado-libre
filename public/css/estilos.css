@@ -72,7 +72,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: var(--black);
-    padding: 5px 0;
+    padding: 0;
 }
 
 a, a:hover, a:link, a:visited {
@@ -91,11 +91,12 @@ a, a:hover, a:link, a:visited {
 }
 
 .mt-header {
-    margin-top: 138px;
+    margin-top: 136px;
 }
 
 .logo {
     float: left;
+    position: relative;
 }
 
 .logo img {
@@ -113,9 +114,10 @@ a, a:hover, a:link, a:visited {
 
 .search-container {
     float: right;
+    position: relative;
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .search-container button {
@@ -153,9 +155,9 @@ a, a:hover, a:link, a:visited {
 .frase {
     font-size: 14px;
     clear: both;
-    display: grid;
+    display: block;
     text-align: center;
-    margin: 30px 0 20px 0;
+    padding: 20px 0;
 }
 
 .frase p {
@@ -500,7 +502,7 @@ input[type=checkbox], input[type=radio] {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
     .mt-header {
         margin-top: 98px;
@@ -554,6 +556,14 @@ input[type=checkbox], input[type=radio] {
         max-width: 1200px;
     }
 
+    a {
+        padding: 8px;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
     .main-header-top-bar, .main-navbar {
         max-width: 1200px;
         margin: auto;
@@ -565,6 +575,10 @@ input[type=checkbox], input[type=radio] {
 
     .mt-header {
         margin-top: 100px;
+    }
+
+    .frase {
+        margin: 0 23px 0 0;
     }
 
     .frase p {
@@ -579,7 +593,11 @@ input[type=checkbox], input[type=radio] {
     }
 
     .search-container {
-        width: auto;
+        width: 400px;
+    }
+
+    .search-container input[type=text] {
+        width: 360px;
     }
 
     .product-order {
