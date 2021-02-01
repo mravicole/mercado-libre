@@ -18,6 +18,6 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './views/login.html'));
 });
 
-app.listen(3000, () => {
-    console.log("El puerto 3000 está encendido");
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo en el puerto 3000");
 });
